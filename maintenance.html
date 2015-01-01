@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Buckets - Maintenance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Pacifico" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="page-wrap maintenance">
+      <div class="error-message-wrap">
+        <div class="error-message">
+          <img src="bucket1.png">
+
+          <div class="title">Buckets</div>
+
+          <p class="description">
+            Buckets is down for maintenance, but should be back up shortly.
+          </p>
+
+          <p class="description">
+            <a href id="feedback-button">Contact us</a> if this persists for more than a few minutes.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- UserVoice -->
+    <script>
+    // Include the UserVoice JavaScript SDK (only needed once on a page)
+    UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/qOi76yOOWdmtI4QUJ4piAg.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+
+    // Set colors
+    UserVoice.push(['set', {
+      accent_color: '#448dd6',
+      trigger_color: 'white',
+      trigger_background_color: '#e23a39'
+    }]);
+
+    // Or, use your own custom trigger:
+    UserVoice.push(['addTrigger', '#feedback-button', { mode: 'contact' }]);
+    </script>
+  </body>
+</html>
